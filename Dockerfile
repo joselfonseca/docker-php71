@@ -11,7 +11,7 @@ RUN apt-get update \
     && apt-get update \
     && apt-get install -y php7.1-fpm php7.1-cli php7.1-gd php7.1-mysql \
        php7.1-imap php-memcached php7.1-mbstring php7.1-xml php7.1-curl \
-       php7.1-sqlite3 php7.1-zip php7.1-pdo-dblib php7.1-bcmath php7.1-gmp \
+       php7.1-sqlite3 php7.1-zip php7.1-pdo-dblib php7.1-bcmath php7.1-gmp php7.1-intl \
     && php -r "readfile('http://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer \
     && mkdir /run/php
 
